@@ -16,16 +16,18 @@
       devShell = pkgs.mkShell {
         buildInputs = with pkgs; [
           (python3.withPackages(ps: with ps; [
-	    # core packages
+            # core packages
             ipython
             jupyter
             numpy
             pandas
-	    matplotlib
-	    seaborn
-	    
-	    # APIS
-	    quandl
+            matplotlib
+            seaborn
+            requests
+            zipfile2
+	
+            # APIS
+            quandl
           ]))
         ];
         shellHook = "jupyter notebook";
