@@ -28,6 +28,7 @@
 	
             # APIS
             quandl
+	    nasdaq-data-link
           ]))
         ];
         shellHook = "jupyter notebook";
