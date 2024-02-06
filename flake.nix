@@ -25,13 +25,16 @@
             seaborn
             requests
             zipfile2
+            yfinance
+            polars
 	
-            # APIS
-            quandl
-	    nasdaq-data-link
+            # APIs
+            # quandl
+            # nasdaq-data-link
+            # polygon-api-client
           ]))
         ];
-        shellHook = "jupyter notebook";
+        shellHook = "jupyter notebook & disown";
       };
     }
   );
