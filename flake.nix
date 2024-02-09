@@ -26,12 +26,8 @@
             requests
             zipfile2
             yfinance
-            polars
-	
-            # APIs
-            # quandl
-            # nasdaq-data-link
-            # polygon-api-client
+            mplfinance
+            dash
           ]))
         ];
         shellHook = "jupyter notebook & disown";
